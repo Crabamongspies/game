@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Healer</title>
     <meta name="crabamongspies" content="crabamongspies" />
-    <style type="text/css"> body { background-color:#000000; }</style>
-    
+    <style type="text/css">
+      body {
+        background-color: #000000;
+      }
+
+      /* Style for the Home link */
+      #home-link {
+        font-family: 'Courier New', Courier, monospace, 'Pixelite', sans-serif;
+        color: #00FF00; /* Green color */
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.2em;
+      }
+    </style>
   </head>
   <body>
+    <a id="home-link" href="https://crabamongspies.github.io/">Home</a> <!-- Home link -->
     <div id="game">
       <canvas id="mainCanvas" width="320" height="288">No Canvas Support</canvas>
     </div>
@@ -32,4 +47,5 @@
     <script src="binjgb.js"></script>
     <script src="js/script.js"></script>
     <script src="js/debugger.js"></script>
-</body>
+  </body>
+</html>
