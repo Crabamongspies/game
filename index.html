@@ -10,6 +10,8 @@
     <style type="text/css">
       body {
         background-color: #000000;
+        margin: 0;
+        padding: 0;
       }
 
       /* Style for the Home link */
@@ -17,10 +19,18 @@
         font-family: 'Courier New', Courier, monospace, 'Pixelite', sans-serif;
         color: #00FF00; /* Green color */
         font-weight: bold;
-        position: absolute;
+        position: fixed;
         top: 10px;
         left: 10px;
         font-size: 1.2em;
+        z-index: 9999; /* Ensure it's above all other content */
+        cursor: pointer;
+        text-decoration: none; /* Remove underline */
+      }
+
+      /* Ensuring the game content is behind the overlay */
+      #game, #controller {
+        z-index: 1;
       }
     </style>
   </head>
